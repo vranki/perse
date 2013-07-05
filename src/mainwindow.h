@@ -12,6 +12,9 @@ namespace Ui {
 class MainWindow;
 }
 
+/**
+ * God class and UI main window
+ */
 class MainWindow : public QMainWindow
 {
     Q_OBJECT

@@ -3,6 +3,9 @@
 
 #include <QObject>
 
+/**
+ * Handles listing devices from udev api
+ */
 class UDev : public QObject
 {
     Q_OBJECT

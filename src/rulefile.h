@@ -6,6 +6,9 @@
 
 #define RULE_FILE "/etc/udev/rules.d/50-perse.rules"
 
+/**
+ * Handles loading & saving the rule file
+ */
 class RuleFile : public QObject
 {
     Q_OBJECT
