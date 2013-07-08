@@ -18,10 +18,7 @@ public:
     void readFile();
     void writeFile(QStringList allowedIds);
 signals:
-    void deviceLoaded(QString name, QString file, QString manu, QString product, QString vid, QString pid);
-
-public slots:
-    
+    void deviceHasRule(QString usbId);
 };
 
 #endif // RULEFILE_H

@@ -8,25 +8,16 @@ as Arduino or USB-serial adapter?
 
 Hate writing udev rules for those gadgets?
 
-Perse is a simple GUI tool to make devices writable in Linux. Just check the devices
-you want to be world writable and Perse creates the udev rules.
+Perse is a easy GUI tool to make devices writable in Linux. Just select the devices
+you want to be world writable and Perse creates persistent udev rules for them.
 
-
-
-Still WIP but usable.
-
-run "sudo touch /etc/udev/rules.d/50-perse.rules" before first run. This will
-be created by deb/rpm packaging later.
-
-Run as root. 
-
+Ubuntu packages available at https://launchpad.net/~ville-ranki/+archive/misc
 
 To compile:
 
  * Install libudev-dev and Qt dev tools
  * qmake
  * make
-
 
 GNU GPLv3, (c) Ville Ranki <ville.ranki@iki.fi>
 

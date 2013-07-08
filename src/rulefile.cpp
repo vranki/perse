@@ -20,7 +20,6 @@ void RuleFile::readFile()
     QFile file(RULE_FILE);
     file.open(QIODevice::ReadOnly | QIODevice::Text);
     QTextStream in(&file);
-    QStringList allowedIds;
 
     QString line;
     do {
@@ -28,8 +27,10 @@ void RuleFile::readFile()
         if(line.startsWith("ATTRS")) {
             QString vid = line.split("\"").at(1);
             QString pid = line.split("\"").at(3);
-            if(vid.length() >= 4 && pid.length() >= 4)
-                emit deviceLoaded("(Not present)", "", "", "", vid, pid);
+            if(vid.length() >= 4 && pid.length() >= 4) {
+                QString usbId = vid + ":" + pid;
+                emit deviceHasRule(usbId);
+            }
         }
     } while(!line.isNull());
     file.close();

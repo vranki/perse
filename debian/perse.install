@@ -1,0 +1,5 @@
+usr/bin/perse
+etc/udev/rules.d/50-perse.rules
+usr/share/applications/perse.desktop
+usr/share/polkit-1/actions/com.ubuntu.pkexec.perse.policy
+

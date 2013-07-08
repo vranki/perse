@@ -12,7 +12,7 @@ class UDev : public QObject
 public:
     explicit UDev(QObject *parent = 0);
 signals:
-    void deviceFound(QString name, QString file, QString manu, QString product, QString vid, QString pid);
+    void deviceFound(QString name, QString file, QString manu, QString usbId);
 public slots:
     void listDevices();
 };

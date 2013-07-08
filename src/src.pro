@@ -9,6 +9,8 @@ QT       += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = perse
+target.path = /usr/bin
+
 TEMPLATE = app
 
 
@@ -24,3 +26,14 @@ HEADERS  += mainwindow.h \
 FORMS    += mainwindow.ui
 
 LIBS += -ludev
+
+rulefile.files = ../50-perse.rules
+rulefile.path = /etc/udev/rules.d
+
+desktop.files = ../perse.desktop
+desktop.path = /usr/share/applications
+
+policy.files = ../com.ubuntu.pkexec.perse.policy
+policy.path = /usr/share/polkit-1/actions
+
+INSTALLS += target rulefile desktop policy

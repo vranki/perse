@@ -43,8 +43,8 @@ void UDev::listDevices()
             vid = udev_device_get_sysattr_value(parentDev, "idVendor");
             pid = udev_device_get_sysattr_value(parentDev, "idProduct");
             manu = udev_device_get_sysattr_value(parentDev, "manufacturer");
-            product = udev_device_get_sysattr_value(parentDev, "product");
-            emit deviceFound(name, file, manu, product, vid, pid);
+            QString usbId = vid + ":" + pid;
+            emit deviceFound(name, file, manu, usbId);
             udev_device_unref(parentDev);
         }
     }

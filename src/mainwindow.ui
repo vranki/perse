@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>797</width>
-    <height>524</height>
+    <width>974</width>
+    <height>516</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -31,7 +31,12 @@
       </attribute>
       <column>
        <property name="text">
-        <string>Writable</string>
+        <string>Make writable</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Status</string>
        </property>
       </column>
       <column>
@@ -41,17 +46,7 @@
       </column>
       <column>
        <property name="text">
-        <string>Device file</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
         <string>Manufacturer</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Product</string>
        </property>
       </column>
       <column>
@@ -68,7 +63,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>797</width>
+     <width>974</width>
      <height>25</height>
     </rect>
    </property>

@@ -5,6 +5,7 @@
 #include <QTableWidgetItem>
 #include <QList>
 #include <QStringList>
+#include <QTimer>
 #include "udev.h"
 #include "rulefile.h"
 
@@ -24,14 +25,18 @@ public:
     ~MainWindow();
     bool canRun();
 private slots:
-    void deviceFound(QString name, QString file, QString manu, QString product, QString vid, QString pid);
+    void deviceFound(QString name, QString file, QString manu, QString usbId);
+    void deviceHasRule(QString usbId);
     void saveChanges();
+    void updateTable();
 private:
+
     Ui::MainWindow *ui;
     UDev udev;
     QList<QTableWidgetItem*> tableItems;
     QStringList usbIds;
     RuleFile ruleFile;
+    QTimer updateTimer;
 };
 
 #endif // MAINWINDOW_H
