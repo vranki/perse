@@ -28,7 +28,7 @@ FORMS    += mainwindow.ui
 LIBS += -ludev
 
 rulefile.files = ../50-perse.rules
-rulefile.path = /etc/udev/rules.d
+rulefile.path = /lib/udev/rules.d
 
 desktop.files = ../perse.desktop
 desktop.path = /usr/share/applications
