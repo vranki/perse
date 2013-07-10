@@ -4,7 +4,7 @@
 #include <QObject>
 #include <QStringList>
 
-#define RULE_FILE "/etc/udev/rules.d/50-perse.rules"
+#define RULE_FILE "/lib/udev/rules.d/50-perse.rules"
 
 /**
  * Handles loading & saving the rule file
