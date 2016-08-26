@@ -8,4 +8,5 @@ DEB_DH_STRIP_ARGS := --dbg-package=perse-dbg
 DH_ALWAYS_EXCLUDE=.git
 
 override_dh_strip:
-        $(overridden_command) --dbg-package=perse-dbg
+	$(overridden_command) --dbg-package=perse-dbg
+

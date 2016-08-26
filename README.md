@@ -13,7 +13,17 @@ you want to be world writable and Perse creates persistent udev rules for them.
 
 Ubuntu packages available at https://launchpad.net/~ville-ranki/+archive/misc
 
-To compile:
+To build and install debian package:
+
+ * git clone https://github.com/vranki/perse.git
+ * cd perse
+ * debuild -us -uc
+ * sudo dpkg -i ../perse*.deb
+
+You can now launch Perse from the application launcher.
+
+
+To compile manually:
 
  * Install libudev-dev and Qt dev tools
  * qmake
