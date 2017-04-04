@@ -6,22 +6,21 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT += widgets
 
 TARGET = perse
 target.path = /usr/bin
 
 TEMPLATE = app
 
-
 SOURCES += main.cpp\
         mainwindow.cpp \
-    udev.cpp \
-    rulefile.cpp
+        udev.cpp \
+        rulefile.cpp
 
 HEADERS  += mainwindow.h \
-    udev.h \
-    rulefile.h
+            udev.h \
+            rulefile.h
 
 FORMS    += mainwindow.ui
 

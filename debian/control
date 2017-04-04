@@ -2,7 +2,7 @@ Source: perse
 Section: admin
 Priority: extra
 Maintainer: Ville Ranki <ville.ranki@iki.fi>
-Build-Depends: debhelper (>= 8.1.3), libqt4-dev, libudev-dev, cdbs (>= 0.4.93~), devscripts
+Build-Depends: debhelper (>= 8.1.3), qt5-default, libudev-dev, cdbs (>= 0.4.93~), devscripts
 Standards-Version: 3.9.4
 
 Package: perse
