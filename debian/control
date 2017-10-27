@@ -7,15 +7,7 @@ Standards-Version: 3.9.4
 
 Package: perse
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, policykit-1, libudev1
+Depends: ${shlibs:Depends}, ${misc:Depends}, libudev1, gksu
 Description: Permission settings manager for USB devices
  GUI for managing USB device permissions using udev framework.
-
-Package: perse-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: perse (= ${binary:Version}), ${misc:Depends}
-Description: Permission setting manager debug symbols
- Debug symbols for perse.
 

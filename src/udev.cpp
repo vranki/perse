@@ -6,10 +6,8 @@
 #include <unistd.h>
 #include <QDebug>
 
-UDev::UDev(QObject *parent) :
-    QObject(parent)
-{
-}
+UDev::UDev(QObject *parent) : QObject(parent)
+{}
 
 // Almost copypaste from http://www.signal11.us/oss/udev/
 void UDev::listDevices()
@@ -26,18 +24,14 @@ void UDev::listDevices()
     struct udev_list_entry *devices = udev_enumerate_get_list_entry(enumerate);
     struct udev_list_entry *dev_list_entry;
     udev_list_entry_foreach(dev_list_entry, devices) {
-        const char *path;
-        path = udev_list_entry_get_name(dev_list_entry);
-        struct udev_device *dev;
-        dev = udev_device_new_from_syspath(udev, path);
-
-        struct udev_device *parentDev;
-        parentDev = udev_device_get_parent_with_subsystem_devtype(
+        const char *path = udev_list_entry_get_name(dev_list_entry);
+        struct udev_device *dev = udev_device_new_from_syspath(udev, path);
+        struct udev_device *parentDev = udev_device_get_parent_with_subsystem_devtype(
                     dev,
                     "usb",
                     "usb_device");
         if (parentDev) {
-            QString name, file, manu, product, vid, pid;
+            QString name, file, manu, vid, pid;
             name = QString::fromUtf8(udev_device_get_sysattr_value(parentDev,"product"));
             file = QString::fromUtf8(udev_device_get_devnode(parentDev));
             vid = udev_device_get_sysattr_value(parentDev, "idVendor");
@@ -45,6 +39,7 @@ void UDev::listDevices()
             manu = udev_device_get_sysattr_value(parentDev, "manufacturer");
             QString usbId = vid + ":" + pid;
             emit deviceFound(name, file, manu, usbId);
+            // if(dev) udev_device_unref(dev); Not sure if this should be done. Valgrind warns always.
             udev_device_unref(parentDev);
         }
     }

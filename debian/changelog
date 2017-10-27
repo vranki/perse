@@ -1,3 +1,10 @@
+perse (1.0.2) unstable; urgency=low
+
+  * Lintian fixes
+  * Moved rule file from /etc to /lib
+
+ -- Ville Ranki <ville.ranki@iki.fi>  Fri, 27 Oct 2017 12:34:56 +0300
+
 perse (1.0.1) raring; urgency=low
 
   * Lintian fixes

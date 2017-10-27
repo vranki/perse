@@ -1,12 +1,4 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2013-07-05T20:29:20
-#
-#-------------------------------------------------
-
-QT       += core gui
-
-QT += widgets
+QT += core gui widgets
 
 TARGET = perse
 target.path = /usr/bin
@@ -35,4 +27,7 @@ desktop.path = /usr/share/applications
 policy.files = ../com.ubuntu.pkexec.perse.policy
 policy.path = /usr/share/polkit-1/actions
 
-INSTALLS += target rulefile desktop policy
+pkexec.files = ../debian/perse-pkexec
+pkexec.path = /usr/bin
+
+INSTALLS += target rulefile desktop policy pkexec

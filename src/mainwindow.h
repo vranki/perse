@@ -23,7 +23,6 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    bool canRun();
 private slots:
     void deviceFound(QString name, QString file, QString manu, QString usbId);
     void deviceHasRule(QString usbId);
@@ -37,6 +36,7 @@ private:
     QStringList usbIds;
     RuleFile ruleFile;
     QTimer updateTimer;
+    int currentListRow;
 };
 
 #endif // MAINWINDOW_H

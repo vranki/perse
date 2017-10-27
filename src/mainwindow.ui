@@ -26,6 +26,9 @@
       <property name="sortingEnabled">
        <bool>true</bool>
       </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
       <attribute name="verticalHeaderVisible">
        <bool>false</bool>
       </attribute>
@@ -64,7 +67,7 @@
      <x>0</x>
      <y>0</y>
      <width>974</width>
-     <height>25</height>
+     <height>19</height>
     </rect>
    </property>
   </widget>
