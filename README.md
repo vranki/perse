@@ -13,15 +13,14 @@ you want to be world writable and Perse creates persistent udev rules for them.
 
 Ubuntu packages available at https://launchpad.net/~ville-ranki/+archive/misc
 
-To build and install debian package:
+To build and install debian package (checkout debian branch!):
 
- * git clone https://github.com/vranki/perse.git
+ * git clone https://github.com/vranki/perse.git -b debian
  * cd perse
- * debuild -us -uc
+ * debuild -us -uc -b
  * sudo dpkg -i ../perse*.deb
 
 You can now launch Perse from the application launcher.
-
 
 To compile manually:
 
