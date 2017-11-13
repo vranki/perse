@@ -1,20 +1,7 @@
-perse (1.0.2) unstable; urgency=low
+perse (1.0.4) unstable; urgency=low
 
-  * Lintian fixes
-  * Moved rule file from /etc to /lib
+  * Improved updating of the list
+  * Debian packaging enhancements, license added (Closes: #880171)
 
- -- Ville Ranki <ville.ranki@iki.fi>  Fri, 27 Oct 2017 12:34:56 +0300
-
-perse (1.0.1) raring; urgency=low
-
-  * Lintian fixes
-  * Moved rule file from /etc to /lib
-
- -- Ville Ranki <ville.ranki@iki.fi>  Thu, 11 Jul 2013 12:34:56 +0300
-
-perse (1.0.0) raring; urgency=low
-
-  * Debian packaging
-
- -- Ville Ranki <ville.ranki@iki.fi>  Mon, 8 Jul 2013 12:34:56 +0300
+ -- Ville Ranki <ville.ranki@iki.fi>  Mon, 13 Nov 2017 12:34:56 +0300
 
