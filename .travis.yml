@@ -1,12 +1,18 @@
-sudo: required
-language: generic
-
-services:
-  - docker
-
-script:
-  - wget -O- http://travis.debian.net/script.sh | sh -
-
+language: cpp
+compiler:
+  - gcc
+before_install:
+ - sudo apt-get update -qq
+ - sudo apt-get install -qq devscripts
+ - sudo mk-build-deps --install debian/control
+script: debuild -i -us -uc -b
 branches:
-  except:
-    - /^debian\/\d/
+  only:
+    - debian
+notifications:
+  recipients:
+    - ville.ranki@iki.fi
+  email:
+    on_success: change
+    on_failure: always
+
