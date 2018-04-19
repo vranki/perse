@@ -30,4 +30,7 @@ policy.path = /usr/share/polkit-1/actions
 pkexec.files = ../debian/perse-pkexec
 pkexec.path = /usr/bin
 
-INSTALLS += target rulefile desktop policy pkexec
+copyright.files = ../copyright
+copyright.path = /usr/share/doc/$TARGET
+
+INSTALLS += target rulefile desktop policy pkexec copyright

@@ -1,6 +1,5 @@
 [Desktop Entry]
 Version=1.0
-Encoding=UTF-8
 Name=Perse Permission Settings Manager
 Comment=Permission setting manager for udev devices
 Exec=perse-pkexec
@@ -8,3 +7,5 @@ Terminal=false
 Type=Application
 StartupNotify=false
 Categories=System;Settings;
+Keywords=permissions;udev;devices;usb
+

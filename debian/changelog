@@ -1,4 +1,4 @@
-perse (1.0.4) unstable; urgency=low
+perse (1.0.4-1) unstable; urgency=low
 
   * Improved updating of the list
   * Debian packaging enhancements, license added (Closes: #880171)

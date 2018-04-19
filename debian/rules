@@ -1,8 +1,8 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
+export QT_SELECT := qt5
+DH_ALWAYS_EXCLUDE := .git
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/qmake.mk
-
-DH_ALWAYS_EXCLUDE=.git
+%:
+	dh $@
 
