@@ -29,4 +29,3 @@ To compile manually:
  * make
 
 GNU GPLv3, (c) Ville Ranki <ville.ranki@iki.fi>
-
