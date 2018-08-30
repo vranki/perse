@@ -15,7 +15,7 @@ Ubuntu packages available at https://launchpad.net/~ville-ranki/+archive/misc
 
 To build and install debian package:
 
- * git clone https://github.com/vranki/perse.git
+ * git clone https://github.com/vranki/perse.git -b debian
  * cd perse
  * debuild -us -uc -b
  * sudo dpkg -i ../perse*.deb
