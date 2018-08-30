@@ -17,7 +17,7 @@ To build and install debian package:
 
  * git clone https://github.com/vranki/perse.git
  * cd perse
- * debuild -us -uc
+ * debuild -us -uc -b
  * sudo dpkg -i ../perse*.deb
 
 You can now launch Perse from the application launcher.

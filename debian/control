@@ -8,7 +8,7 @@ Homepage: https://github.com/vranki/perse
 
 Package: perse
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libudev1, gksu, udev
+Depends: ${shlibs:Depends}, ${misc:Depends}, libudev1, udev, policykit-1
 Description: Permission settings manager for USB devices
  GUI for managing USB device permissions using udev framework.
 
