@@ -11,6 +11,8 @@ Hate writing udev rules for those gadgets?
 Perse is a easy GUI tool to make devices writable in Linux. Just select the devices
 you want to be world writable and Perse creates persistent udev rules for them.
 
+![Screenshot](screenshot.png)
+
 Ubuntu packages available at https://launchpad.net/~ville-ranki/+archive/misc
 
 To build and install debian package:
