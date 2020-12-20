@@ -34,3 +34,6 @@ copyright.files = ../copyright
 copyright.path = /usr/share/doc/$TARGET
 
 INSTALLS += target rulefile desktop policy pkexec copyright
+
+DISTFILES += \
+    ../.github/workflows/debianpackage.yml
